@@ -1,5 +1,6 @@
 # installRACECARJ
 <em>January, 2018</em>
+
 Scripts in this repository will install ROS and the MIT RACECAR packages on a NVIDIA Jetson Development Kit.
 
 This version is for L4T 28.1
@@ -17,7 +18,7 @@ The MIT RACECAR supported here is version 2.5. The hardware configuration includ
 
 The file installMITRACECAR.sh will install the MIT RACECAR software. Before running installMITRACECAR.sh, the Stereolabs ZED camera driver must be installed. The ZED camera driver is available at: https://www.stereolabs.com/developers/
 
-Note that these repositories are in development, and are subject to change soon.
+Note that this repository is in development, and is subject to change soon.
 
 The installation script:
 
@@ -33,17 +34,6 @@ Does the following:
 <li>The MIT RACECAR packages are installed.</li>
 </ul> 
 
-
-
-### Notes
-This TensorFlow installation procedure was derived from these discussion threads: 
-
-<ul>
-<li>https://github.com/tensorflow/tensorflow/issues/851</li>
-<li>http://stackoverflow.com/questions/39783919/tensorflow-on-nvidia-tx1/</li>
-<li>https://devtalk.nvidia.com/default/topic/1000717/tensorflow-on-jetson-tx2/</li>
-<li>https://github.com/tensorflow/tensorflow/issues/9697</li>
-</ul>
 
 ### Release Notes
 January 2018
