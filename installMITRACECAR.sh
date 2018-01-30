@@ -1,11 +1,7 @@
 #!/bin/bash
 # Install the MIT RACECAR software
 # This is for L4T 28.1
-if [ $(id -u) != 0 ]; then
-   echo "This script requires root permissions"
-   echo "$ sudo "$0""
-   exit
-fi
+
 # L4T 28.1 does not have a cdc-acm driver
 ./scripts/installCDCACM.sh
 # Setup the UDEV rules for the ESC and IMU
