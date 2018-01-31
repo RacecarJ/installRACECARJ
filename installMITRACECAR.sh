@@ -14,5 +14,8 @@
 sudo apt-get install ros-kinetic-opencv3 -y
 # And now install the MIT RACECAR packages
 ./scripts/installMITRACECAR.sh racecar-ws
+# Print out a little info at the end
+./scripts/echoInfo.sh
+
 
 

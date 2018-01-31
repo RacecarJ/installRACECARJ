@@ -33,3 +33,8 @@ grep -q -F 'source /opt/ros/kinetic/setup.bash' ~/.bashrc || echo "source /opt/r
 source ~/.bashrc
 # Install rosinstall
 sudo apt-get install python-rosinstall -y
+#setup ROS environment variables
+grep -q -F ' ROS_MASTER_URI' ~/.bashrc ||  echo 'export ROS_MASTER_URI=http://localhost:11311' | tee -a ~/.bashrc
+grep -q -F ' ROS_IP' ~/.bashrc ||  echo "export ROS_IP=$(hostname -I)" | tee -a ~/.bashrc
+# echo "export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH" >> ~/.bashrc
+

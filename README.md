@@ -34,6 +34,10 @@ Does the following:
 <li>The MIT RACECAR packages are installed.</li>
 </ul> 
 
+### Note
+The ROS environment variables ROS_MASTER_URI and ROS_IP are initialized in the file ~/.bashrc
+
+You will need to modify these environment variables to match your needs and network layout.
 
 ### Release Notes
 January 2018
