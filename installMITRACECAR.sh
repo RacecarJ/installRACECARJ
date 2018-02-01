@@ -1,6 +1,8 @@
 #!/bin/bash
 # Install the MIT RACECAR software
-# This is for L4T 28.1
+# This is for NVIDIA Jetson L4T 28.1
+# This will install the whole software stack for the MIT RACECAR
+# Includes ROS installation
 
 # L4T 28.1 does not have a cdc-acm driver
 ./scripts/installCDCACM.sh
@@ -16,6 +18,8 @@ sudo apt-get install ros-kinetic-opencv3 -y
 ./scripts/installMITRACECAR.sh racecar-ws
 # Print out a little info at the end
 ./scripts/echoInfo.sh
+echo "The RACECAR Packages should now be installed in the directory racecar-ws"
+echo " " 
 
 
 

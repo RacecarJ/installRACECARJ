@@ -16,7 +16,7 @@ JetPack must also install:
 
 The MIT RACECAR supported here is version 2.5. The hardware configuration includes a Stereolabs ZED camera and Hokuyo UST-10LX scanning range finder. 
 
-The file installMITRACECAR.sh will install the MIT RACECAR software. Before running installMITRACECAR.sh, the Stereolabs ZED camera driver must be installed. The ZED camera driver is available at: https://www.stereolabs.com/developers/
+The file installMITRACECAR.sh will install the full ROS stack and MIT RACECAR software. Before running installMITRACECAR.sh, the Stereolabs ZED camera driver must be installed. The ZED camera driver is available at: https://www.stereolabs.com/developers/
 
 Note that this repository is in development, and is subject to change soon.
 
@@ -33,6 +33,19 @@ Does the following:
 <li>One of the dependencies is missing in the package specifications, so ros-kinetic-opencv3 is installed.</li>
 <li>The MIT RACECAR packages are installed.</li>
 </ul> 
+
+<h2>Helper Scripts</h2>
+<h3>installROS.sh</h3>
+Adds the ROS sources list, sets the keys and then loads ros-kinetic-ros-base. Edit this file to add other ROS packages for your installation. After loading, rosdep is initialized. Included in the full software installs, provided here for convenience.
+
+<h3>setupCatkinWorkspace.sh</h3>
+Usage:
+
+$ ./setupCatkinWorkspace.sh [optionalWorkspaceName]
+
+where optionalWorkspaceName is the name of the workspace to be used. The default workspace name is catkin_ws. Included in the full software installs, provided here for convenience.
+
+
 
 ### Note
 The ROS environment variables ROS_MASTER_URI and ROS_IP are initialized in the file ~/.bashrc
