@@ -14,11 +14,11 @@ JetPack must also install:
 
 <h2>MIT RACECAR Configuration Installation</h2>
 
-The MIT RACECAR supported here is version 2.5. The hardware configuration includes a Stereolabs ZED camera and Hokuyo UST-10LX scanning range finder. 
+The MIT RACECAR supported here is version 2.5. The hardware configuration includes a Stereolabs ZED camera, Hokuyo UST-10LX scanning range finder, and SparkFun SEN-14001 IMU. 
 
 The file installMITRACECAR.sh will install the full ROS stack and MIT RACECAR software. Before running installMITRACECAR.sh, the Stereolabs ZED camera driver must be installed. The ZED camera driver is available at: https://www.stereolabs.com/developers/
 
-Note that this repository is in development, and is subject to change soon.
+Note that this repository is currently under heavy development, and is subject to change soon.
 
 The installation script:
 
