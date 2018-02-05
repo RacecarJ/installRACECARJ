@@ -12,13 +12,15 @@ JetPack must also install:
 <li>OpenCV4Tegra 2.4.13</li>
 </ul>
 
+<em>Note that this repository is currently under heavy development, and is subject to change soon.
+</em>
+
 <h2>MIT RACECAR Configuration Installation</h2>
 
 The MIT RACECAR supported here is version 2.5. The hardware configuration includes a Stereolabs ZED camera, Hokuyo UST-10LX scanning range finder, and SparkFun SEN-14001 IMU. 
 
-The file installMITRACECAR.sh will install the full ROS stack and MIT RACECAR software. Before running installMITRACECAR.sh, the Stereolabs ZED camera driver must be installed. The ZED camera driver is available at: https://www.stereolabs.com/developers/
+The file installMITRACECAR.sh will install the full ROS stack and MIT RACECAR software. Before running installMITRACECAR.sh, the Stereolabs ZED camera driver must be installed (see scripts below). The ZED camera driver is available at: https://www.stereolabs.com/developers/ in the archive section.
 
-Note that this repository is currently under heavy development, and is subject to change soon.
 
 The installation script:
 
@@ -31,13 +33,28 @@ Does the following:
 <li>Because the electronic speed controller and the IMU both report as ttyACM, a udev rule is installed which names them as vesc and imu respectively.</li>
 <li>ROS is configured and rosbase is installed</li>
 <li>One of the dependencies is missing in the package specifications, so ros-kinetic-opencv3 is installed.</li>
-<li>The MIT RACECAR packages are installed.</li>
+<li>The MIT RACECAR packages are installed, which includes the ZED v2.2.x ROS wrapper.</li>
 </ul> 
 
-<h2>Helper Scripts</h2>
-<h3>installROS.sh</h3>
-Adds the ROS sources list, sets the keys and then loads ros-kinetic-ros-base. Edit this file to add other ROS packages for your installation. After loading, rosdep is initialized. Included in the full software installs, provided here for convenience.
+<h2>Stereolabs ZED Drivers</h2>
+Scripts are provided to install version 2.2.1 of the Stereolabs ZED drivers. These drivers match the JetPack 3.1/L4T 28.1 software with CUDA 8.0. The scripts are in the JetsonTX1 and JetsonTX2 repositories. Select the appropriate script for your machine, e.g. installZED-SDK-TX2.sh for the Jetson TX2.
+Usage (for example):
 
+$ ./installZED-SDK-TX2.sh
+
+The ZED installer will be placed in the home directory, ~/ZED
+
+Next, the ZED installer will install the ZED driver software.
+
+Note that the driver installer is in ~/ZED, not the ZED driver itself.
+
+<h2>Helper Scripts</h2>
+Included in the full software installs, provided here for convenience.
+
+
+<h3>installROS.sh</h3>
+Adds the ROS sources list, sets the keys and then loads ros-kinetic-ros-base. Edit this file to add other ROS packages for your installation. After loading, rosdep is initialized.
+ 
 <h3>setupCatkinWorkspace.sh</h3>
 Usage:
 
