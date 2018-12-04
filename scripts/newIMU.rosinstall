@@ -1,0 +1,5 @@
+- git: {local-name: src/racecar,  version: RacecarJTransitory, uri: 'https://github.com/RacecarJ/racecar.git'}
+- git: {local-name: src/razor_imu_m0_driver, version: devel, uri: 'https://github.com/RacecarJ/razor_imu_m0_driver.git'}
+- git: {local-name: src/vesc,                  version: RacecarJTransitory,        uri: 'https://github.com/RacecarJ/vesc.git'}
+- git: {local-name: src/racecar-controllers,   version: master,                    uri: 'https://github.com/RacecarJ/racecar-controllers.git'}
+

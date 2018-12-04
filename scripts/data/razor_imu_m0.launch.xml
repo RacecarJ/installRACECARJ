@@ -1,0 +1,6 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+  
+  <node pkg="razor_imu_m0_driver" type="driver_node" name="imu_node" />
+  
+</launch>

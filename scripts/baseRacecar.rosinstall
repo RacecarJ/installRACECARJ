@@ -1,0 +1,4 @@
+- git: {local-name: racecar,               version: RacecarJTransitory,        uri: 'https://github.com/RacecarJ/racecar.git'}
+- git: {local-name: vesc,                  version: RacecarJTransitory,        uri: 'https://github.com/RacecarJ/vesc.git'}
+- git: {local-name: racecar-controllers,   version: master,                    uri: 'https://github.com/RacecarJ/racecar-controllers.git'}
+
