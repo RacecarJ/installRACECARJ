@@ -13,7 +13,8 @@
 # One of the dependencies is missing, opencv3 for ros
 sudo apt-get install ros-kinetic-opencv3 -y
 # And now install the MIT RACECAR packages
-./scripts/installBaseRACECAR.sh racecar-ws
+cd scripts
+./installBaseRACECAR.sh racecar-ws
 # Print out a little info at the end
 ./scripts/echoInfo.sh
 echo "The RACECAR Packages should now be installed in the directory racecar-ws"
