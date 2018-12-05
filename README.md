@@ -1,5 +1,7 @@
 # installRACECARJ
 <em>January, 2018</em>
+TO DO: Update ZED scripts for L4T 28.2.1
+TO DO: Update README
 
 Scripts in this repository will install ROS and the MIT RACECAR packages on a NVIDIA Jetson Development Kit.
 
