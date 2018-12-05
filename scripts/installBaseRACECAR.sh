@@ -36,12 +36,13 @@ else
 fi
 cd "$DEFAULTDIR"
 
-# Read in the base racecar rosinstall file
+# Read in the base racecar rosinstall file; No ZED
 wstool init src  "$WHEREAMI"/baseRacecar.rosinstall
-# Fix the IMU package
-# cp "$WHEREAMI"/data/razor_imu_m0.launch.xml "$DEFAULTDIR"/src/src/racecar/racecar/launch/includes/common/sensors/razor_imu_m0.launch.xml
 # The IMU is the only default sensor for now ...
 cp "$WHEREAMI"/data/sensors.launch.xml "$DEFAULTDIR"/src/racecar/racecar/launch/includes/common/sensors.launch.xml
+# Package without the urg_node from the Hokuyo
+cp "$WHEREAMI"/data/package.xml "$DEFAULTDIR"/src/racecar/racecar/package.xml
+cp "$WHEREAMI"/data/CMakeLists.txt "$DEFAULTDIR"/src/racecar/racecar/CMakeLists.txt
 
 # Install prerequisite packages
 echo "Installing prerequisites"
