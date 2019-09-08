@@ -14,8 +14,8 @@ mkdir -p "$DEFAULTDIR"
 cd "$DEFAULTDIR"
 
 
-wget https://www.stereolabs.com/developers/downloads/archives/ZED_SDK_Linux_JTX2_v2.2.1.run 
-chmod +x ZED_SDK_Linux_JTX2_v2.2.1.run
-./ZED_SDK_Linux_JTX2_v2.2.1.run
+wget https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/2.8/ZED_SDK_JP3.3_v2.8.3.run
+chmod +x ZED_SDK_JP3.3_v2.8.3.run
+./ZED_SDK_JP3.3_v2.8.3.run
 
 
